@@ -1,2 +1,1 @@
-# jetpin-app
-App Flutter per recensioni di voli
+// Placeholder for README.md

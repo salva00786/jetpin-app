@@ -25,7 +25,7 @@ class _JetPinAppState extends State<JetPinApp> {
 
   Future<void> loadLocalizedStrings() async {
     Locale locale = Localizations.localeOf(context);
-    String jsonString = await rootBundle.loadString('assets/lang/\${locale.languageCode}.json');
+    String jsonString = await rootBundle.loadString('assets/lang/${locale.languageCode}.json');
     Map<String, dynamic> jsonMap = json.decode(jsonString);
     setState(() {
       localizedStrings = jsonMap.map((key, value) => MapEntry(key, value.toString()));

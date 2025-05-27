@@ -1,1 +1,11 @@
-// Placeholder for assets/lang/en.json
+{
+  "title": "JetPin",
+  "welcome": "Welcome to JetPin \u2013 The voice of flyers.",
+  "login_button": "Sign in with Google",
+  "review_title": "Write a review",
+  "submit": "Submit",
+  "cancel": "Cancel",
+  "no_reviews": "No reviews found",
+  "loading": "Loading...",
+  "logout": "Log out"
+}

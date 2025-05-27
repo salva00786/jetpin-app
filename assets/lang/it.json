@@ -1,1 +1,11 @@
-// Placeholder for assets/lang/it.json
+{
+  "title": "JetPin",
+  "welcome": "Benvenuto su JetPin \u2013 La voce dei viaggiatori.",
+  "login_button": "Accedi con Google",
+  "review_title": "Scrivi una recensione",
+  "submit": "Invia",
+  "cancel": "Annulla",
+  "no_reviews": "Nessuna recensione trovata",
+  "loading": "Caricamento...",
+  "logout": "Esci"
+}

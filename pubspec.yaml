@@ -1,1 +1,31 @@
-// Placeholder for pubspec.yaml
+name: jetpin_app
+description: JetPin - Recensioni di voli in tempo reale
+version: 1.0.0+1
+publish_to: none  # questo rimane così: significa "non è un pacchetto da pubblicare su pub.dev"
+
+environment:
+  sdk: ">=2.19.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  firebase_core: ^2.10.0
+  firebase_auth: ^4.6.2
+  cloud_firestore: ^4.5.0
+  google_sign_in: ^6.1.4
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.18.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/lang/en.json
+    - assets/lang/it.json

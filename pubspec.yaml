@@ -4,28 +4,62 @@ version: 1.0.0+1
 publish_to: none
 
 environment:
-  sdk: ">=2.19.0 <4.0.0"
+  sdk: '>=3.0.0 <4.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
-  firebase_core: ^2.10.0
-  firebase_auth: ^4.6.2
-  cloud_firestore: ^4.5.0
-  google_sign_in: ^6.1.4
+  firebase_core: ^2.30.0
+  firebase_auth: ^4.17.4
+  cloud_firestore: ^4.15.6
+  google_sign_in: ^6.2.1
+  flutter_rating_bar: ^4.0.1
+  google_mobile_ads: ^4.0.0
+  shared_preferences: ^2.2.2
+  in_app_purchase: ^3.1.6
+  url_launcher: ^6.2.5
+  fl_chart: ^0.63.0
+  share_plus: ^7.2.1
+  flutter_local_notifications: ^17.0.0
+  # awesome_notifications: ^0.10.1  #
+  timezone: ^0.9.2
+  permission_handler: ^11.3.0
   flutter_localizations:
     sdk: flutter
   intl: ^0.20.2
 
 dev_dependencies:
+  flutter_native_splash: ^2.3.0
+  flutter_launcher_icons: ^0.13.1
+  build_runner: ^2.0.0
+  flutter_gen: ^5.10.0  # Upgrade flutter_gen to a compatible version
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
+  intl_utils: ^2.8.0  # Ensure you have a compatible version of intl_utils
 
 flutter:
   uses-material-design: true
+  generate: true
 
   assets:
-    - assets/lang/en.json
-    - assets/lang/it.json
+    - assets/images/jetpin_logo.png
+    - assets/logos/
+    - assets/data/
+
+flutter_launcher_icons:
+  android: true # Abilita per Android
+  ios: true     # Abilita per iOS
+  image_path: "assets/images/jetpin-icon.png" # Path alla tua icona sorgente (es. 1024x1024)
+  # Per Adaptive Icons su Android (facoltativo ma consigliato):
+  adaptive_icon_background: "#FFFFFF" # Colore di sfondo in esadecimale o path a un'immagine
+  adaptive_icon_foreground: "assets/images/jetpin-icon.png" # Path al layer di foreground del logo
+
+flutter_native_splash:
+  color: "#FFFFFF"  # Esempio: bianco. Usa il tuo codice esadecimale.
+  image: assets/images/jetpin_logo1.png
+  android_12:
+    image: assets/images/jetpin_logo1200.png
+    color: "#FFFFFF"  # Esempio: bianco. Usa il tuo codice esadecimale.
+  ios: true
